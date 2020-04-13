@@ -2,6 +2,7 @@ Addressbook Tutorial
 ====================
 ##jenkins ci test
 ##demo
+##demo
 
 This tutorial teaches you some of the basic concepts in [Vaadin Framework](https://vaadin.com). It is meant to be
 a fast read for learning how to get started - not an example on how application should be
