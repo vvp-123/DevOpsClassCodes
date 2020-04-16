@@ -6,13 +6,13 @@ node{
         git 'https://github.com/vvp-123/DevOpsClassCodes.git'
     }
     stage('compile'){
-        withMaven(maven:'trainingmvn'){
+        withMaven(maven:'trainingmaven'){
             sh "mvn compile"
         }
     }
     stage('test'){
         try{
-          withMaven(maven:'trainingmvn'){
+          withMaven(maven:'trainingmaven'){
             sh "mvn test"
           }  
         } finally{
@@ -20,7 +20,7 @@ node{
         }
     }
     stage('package'){
-        withMaven(maven:'trainingmvn'){
+        withMaven(maven:'trainingmaven'){
             sh "mvn package"
         }
     }
